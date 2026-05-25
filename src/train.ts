@@ -1,5 +1,22 @@
+// MITASK N-TASK
+function palindromCheck(str: string): boolean {
+  let reversed = "";
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+
+  return str === reversed;
+}
+console.log(palindromCheck("dad")); // true
+console.log(palindromCheck("son")); // false
+console.log(palindromCheck("mom")); // true
+
+
+
+
 // MITASK M-TASK
-function getSquareNumbers(arr: number[]): { number: number; square: number }[] {
+/* function getSquareNumbers(arr: number[]): { number: number; square: number }[] {
   let result: { number: number; square: number }[] = [];
   for (let i = 0; i < arr.length; i++) {
     result.push({
@@ -31,4 +48,7 @@ function reverseSentence(str: string): string {
 }
 
 console.log(reverseSentence("we like coding"));
-console.log(reverseSentence("leo"));
+console.log(reverseSentence("leo"));  
+
+
+*/
