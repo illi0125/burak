@@ -1,3 +1,18 @@
+// MITASK O-TASK
+function calculateSumOfNumbers(arr: any[]): number {
+  let sum = 0;
+
+  for (let item of arr) {
+    if (typeof item === "number") {
+      sum += item;
+    }
+  }
+
+  return sum;
+}
+console.log(calculateSumOfNumbers([10, "10", { son: 10 }, true, 35])); // 45
+console.log(calculateSumOfNumbers([20, "20", { son: 20 }, true, 45])); // 65
+
 /* Project Standars:
     - Logging standards
     - Naming standards:
@@ -16,7 +31,7 @@
  */
 
 // MITASK N-TASK
-function palindromCheck(str: string): boolean {
+/* function palindromCheck(str: string): boolean {
   let reversed = "";
 
   for (let i = str.length - 1; i >= 0; i--) {
@@ -28,9 +43,7 @@ function palindromCheck(str: string): boolean {
 console.log(palindromCheck("dad")); // true
 console.log(palindromCheck("son")); // false
 console.log(palindromCheck("mom")); // true
-
-
-
+*/
 
 // MITASK M-TASK
 /* function getSquareNumbers(arr: number[]): { number: number; square: number }[] {
