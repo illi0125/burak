@@ -6,8 +6,14 @@
           folder, file => KEBAB
           css => SNAKE
     - Error handling
-    
 */
+
+/*
+  Traditional API
+  REST API
+  GraphQL API
+  ...
+ */
 
 // MITASK N-TASK
 function palindromCheck(str: string): boolean {
