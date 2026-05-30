@@ -1,3 +1,14 @@
+/* Project Standars:
+    - Logging standards
+    - Naming standards:
+          functions, method, variable => CAMEL
+          class => PASCAL
+          folder => KEBAB
+          css => SNAKE
+    - Error handling
+    
+*/
+
 // MITASK N-TASK
 function palindromCheck(str: string): boolean {
   let reversed = "";
