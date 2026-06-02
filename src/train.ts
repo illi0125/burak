@@ -10,6 +10,11 @@ function objectToArray(obj: { [key: string]: any }): [string, any][] {
 console.log(objectToArray({ a: 10, b: 20 }));
 console.log(objectToArray({ c: 30, d: 40 }));
 
+/* 
+  Traditional FD => BSSR => EJS
+  Modern FD      => SPA  => React
+*/
+
 // MITASK O-TASK
 /* function calculateSumOfNumbers(arr: any[]): number {
   let sum = 0;
