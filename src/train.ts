@@ -1,5 +1,17 @@
+// MITASK P-TASK
+function objectToArray(obj: { [key: string]: any }): [string, any][] {
+  let result: [string, any][] = [];
+  for (let key in obj) {
+    result.push([key, obj[key]]);
+  }
+  return result;
+}
+
+console.log(objectToArray({ a: 10, b: 20 }));
+console.log(objectToArray({ c: 30, d: 40 }));
+
 // MITASK O-TASK
-function calculateSumOfNumbers(arr: any[]): number {
+/* function calculateSumOfNumbers(arr: any[]): number {
   let sum = 0;
 
   for (let item of arr) {
@@ -12,6 +24,7 @@ function calculateSumOfNumbers(arr: any[]): number {
 }
 console.log(calculateSumOfNumbers([10, "10", { son: 10 }, true, 35])); // 45
 console.log(calculateSumOfNumbers([20, "20", { son: 20 }, true, 45])); // 65
+*/
 
 /* Project Standars:
     - Logging standards
