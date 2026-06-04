@@ -1,5 +1,21 @@
+// MITASK Q-TASK
+function hasProperty(
+  obj: Record<string, unknown>, // key=string, value=any
+  str: string
+): boolean {
+  return Object.keys(obj).includes(str);
+}
+console.log(
+  hasProperty({ name: "BMW", model: "M3" }, "model")
+); // true
+console.log(
+  hasProperty({ name: "BMW", model: "M3" }, "year")
+); // false
+
+
+
 // MITASK P-TASK
-function objectToArray(obj: { [key: string]: any }): [string, any][] {
+/* function objectToArray(obj: { [key: string]: any }): [string, any][] {
   let result: [string, any][] = [];
   for (let key in obj) {
     result.push([key, obj[key]]);
@@ -9,6 +25,7 @@ function objectToArray(obj: { [key: string]: any }): [string, any][] {
 
 console.log(objectToArray({ a: 10, b: 20 }));
 console.log(objectToArray({ c: 30, d: 40 }));
+*/
 
 /* 
   Traditional FD => BSSR => EJS
