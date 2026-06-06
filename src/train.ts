@@ -1,5 +1,6 @@
+// MITASK R-TASK
 // MITASK Q-TASK
-function hasProperty(
+/* function hasProperty(
   obj: Record<string, unknown>, // key=string, value=any
   str: string
 ): boolean {
@@ -11,7 +12,7 @@ console.log(
 console.log(
   hasProperty({ name: "BMW", model: "M3" }, "year")
 ); // false
-
+*/
 
 
 // MITASK P-TASK
@@ -64,6 +65,11 @@ console.log(calculateSumOfNumbers([20, "20", { son: 20 }, true, 45])); // 65
   GraphQL API
   ...
  */
+
+/* SESSIONS 
+  request join
+  self destroy
+*/
 
 // MITASK N-TASK
 /* function palindromCheck(str: string): boolean {
