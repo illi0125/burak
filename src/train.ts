@@ -1,4 +1,12 @@
 // MITASK R-TASK
+function calculate(str: string): number {
+  const numbers = str.split("+");
+  return Number(numbers[0]) + Number(numbers[1]);
+}
+console.log(calculate("1+3")); // 4
+console.log(calculate("10+5")); // 15
+
+
 // MITASK Q-TASK
 /* function hasProperty(
   obj: Record<string, unknown>, // key=string, value=any
