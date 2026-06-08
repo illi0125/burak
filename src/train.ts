@@ -1,3 +1,19 @@
+// MITASK R-TASK 
+function missingNumber(nums: number[]): number {
+  nums.sort((a, b) => a - b);
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] !== i) {
+      return i;
+    }
+  }
+  return nums.length;
+}
+console.log(missingNumber([3, 0, 1])); // 2
+console.log(missingNumber([0, 1]));    // 2
+console.log(missingNumber([9,6,4,2,3,5,7,0,1])); // 8
+
+
+
 /* Validation:
   Frontend Validation
   Backend Validation
@@ -6,13 +22,13 @@
 
 
 // MITASK R-TASK
-function calculate(str: string): number {
+/*function calculate(str: string): number {
   const numbers = str.split("+");
   return Number(numbers[0]) + Number(numbers[1]);
 }
 console.log(calculate("1+3")); // 4
 console.log(calculate("10+5")); // 15
-
+*/
 
 // MITASK Q-TASK
 /* function hasProperty(
