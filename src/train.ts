@@ -1,3 +1,10 @@
+/* Validation:
+  Frontend Validation
+  Backend Validation
+  Database Validation
+*/
+
+
 // MITASK R-TASK
 function calculate(str: string): number {
   const numbers = str.split("+");
@@ -67,14 +74,14 @@ console.log(calculateSumOfNumbers([20, "20", { son: 20 }, true, 45])); // 65
     - Error handling
 */
 
-/*
+/* Request
   Traditional API
   REST API
   GraphQL API
   ...
  */
 
-/* SESSIONS 
+/* Cookies:
   request join
   self destroy
 */
