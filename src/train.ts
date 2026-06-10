@@ -1,5 +1,16 @@
+// MITASK T-TASK 
+function mergeSortedArrays(arr1: number[], arr2: number[]): number[] {
+  const result = arr1.concat(arr2);
+  return result.sort((a, b) => a - b);
+}
+console.log(mergeSortedArrays([0, 3, 4, 31], [4, 6, 30]));
+console.log(mergeSortedArrays([33, 3, 22, 316], [47, 56, 30]));
+
+
+
+
 // MITASK R-TASK 
-function missingNumber(nums: number[]): number {
+/* function missingNumber(nums: number[]): number {
   nums.sort((a, b) => a - b);
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] !== i) {
@@ -11,7 +22,7 @@ function missingNumber(nums: number[]): number {
 console.log(missingNumber([3, 0, 1])); // 2
 console.log(missingNumber([0, 1]));    // 2
 console.log(missingNumber([9,6,4,2,3,5,7,0,1])); // 8
-
+*/
 
 
 /* Validation:
