@@ -95,5 +95,13 @@ class MemberService {
     // console.log("result:", result);
     // return member;
   }
+
+  public async getUsers(): Promise<Member[]> {
+    const result = await this.memberModel
+      .find({ memberType: MemberType.USER })
+      .exec();
+
+      return result;
+  }
 }
 export default MemberService;
