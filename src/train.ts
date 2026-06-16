@@ -1,11 +1,22 @@
 // MITASK T-TASK 
-function mergeSortedArrays(arr1: number[], arr2: number[]): number[] {
+function sumOdds(n: number): number {
+  return Math.floor(n / 2);
+}
+
+console.log(sumOdds(9));  // 4
+console.log(sumOdds(11)); // 5
+
+
+
+
+// MITASK T-TASK 
+/* function mergeSortedArrays(arr1: number[], arr2: number[]): number[] {
   const result = arr1.concat(arr2);
   return result.sort((a, b) => a - b);
 }
 console.log(mergeSortedArrays([0, 3, 4, 31], [4, 6, 30]));
 console.log(mergeSortedArrays([33, 3, 22, 316], [47, 56, 30]));
-
+*/
 
 
 
