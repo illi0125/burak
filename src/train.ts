@@ -1,11 +1,29 @@
+// MITASK V-TASK 
+function countChars(str: string): Record<string, number> {
+  const result: Record<string, number> = {};
+  for (const char of str) {
+    if (result[char]) {
+      result[char]++;
+    } else {
+      result[char] = 1;
+    }
+  }
+  return result;
+}
+console.log(countChars("hello"));
+console.log(countChars("yellow"));
+
+
+
+
 // MITASK T-TASK 
-function sumOdds(n: number): number {
+/* function sumOdds(n: number): number {
   return Math.floor(n / 2);
 }
 
 console.log(sumOdds(9));  // 4
 console.log(sumOdds(11)); // 5
-
+*/
 
 
 
