@@ -35,7 +35,7 @@ function validateSignupForm() {
     memberNick === "" ||
     memberPhone === "" ||
     memberPassword === "" ||
-    memberPassword === ""
+    confirmPassword === ""
   ) {
     alert("Please insert all required inputs!");
     return false;
