@@ -1,5 +1,39 @@
+// MITASK X-TASK 
+function countOccurrences(obj: any, key: string): number {
+  let count = 0;
+  for (const k in obj) {
+    if (k === key) {
+      count++;
+    }
+    if (typeof obj[k] === "object" && obj[k] !== null) {
+      count += countOccurrences(obj[k], key);
+    }
+  }
+  return count;
+}
+const data = {
+  model: "Bugatti",
+  steer: {
+    model: "HANKOOK",
+    size: 30
+  }
+};
+console.log(countOccurrences(data, "model")); // 2
+
+const obj = {
+  name: "Leo",
+  info: {
+    name: "Sam",
+    car: {
+      name: "BMW"
+    }
+  }
+};
+console.log(countOccurrences(obj, "name")); // 3
+
+
 // MITASK W-TASK 
-function chunkArray(arr: number[], size: number): number[][] {
+/* function chunkArray(arr: number[], size: number): number[][] {
   const result: number[][] = [];
   for (let i = 0; i < arr.length; i += size) {
     result.push(arr.slice(i, i + size));
@@ -9,7 +43,7 @@ function chunkArray(arr: number[], size: number): number[][] {
 
 console.log(chunkArray([1,2,3,4,5,6,7,8,9,10], 3));
 console.log(chunkArray([1,2,3,4,5,6,7,8,9,10], 5));
-
+*/
 
 // MITASK V-TASK 
 /* function countChars(str: string): Record<string, number> {

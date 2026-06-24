@@ -9,6 +9,9 @@ import session from "express-session";
 import ConnectMongoDB from "connect-mongodb-session";
 import { T } from "./libs/types/common";
 
+// REACT
+import cors from 'cors';
+
 const MongoDBStore = ConnectMongoDB(session);
 const store = new MongoDBStore({
   uri: String(process.env.MONGO_URL),
@@ -21,6 +24,10 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(morgan(MORGAN_FORMAT));
+
+// REACT
+// Allow your upcoming Vite frontend to access this backend
+app.use(cors({ origin: 'http://localhost:5173' })); 
 
 /** 2-SESSIONS **/
 app.use(
@@ -47,5 +54,12 @@ app.set("view engine", "ejs");
 /** 4-ROUTERS **/
 app.use("/admin", routerAdmin); // SSR: EJS // SPA: REACT
 app.use("/", router); // Middleware Design Pattern
+
+
+// 2. NEW ROUTE (Add this for your upcoming React App)
+app.get('/api/users', (req, res) => {
+  const users = [{ id: 1, name: 'Burak' }];
+  res.json(users); // Pure data that Redux will fetch
+});
 
 export default app;
