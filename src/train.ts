@@ -1,5 +1,15 @@
+// MITASK Y-TASK 
+function findIntersection<T>(arr1: T[], arr2: T[]): T[] {
+  return arr1.filter(item => arr2.includes(item));
+}
+console.log(findIntersection([1, 2, 3], [3, 2, 0]));
+console.log(findIntersection(["a", "b", "c"], ["a", "b"])); 
+// <T> - har xil qiymatlar (str, num...)
+
+
+
 // MITASK X-TASK 
-function countOccurrences(obj: any, key: string): number {
+/* function countOccurrences(obj: any, key: string): number {
   let count = 0;
   for (const k in obj) {
     if (k === key) {
@@ -30,7 +40,7 @@ const obj = {
   }
 };
 console.log(countOccurrences(obj, "name")); // 3
-
+*/
 
 // MITASK W-TASK 
 /* function chunkArray(arr: number[], size: number): number[][] {
