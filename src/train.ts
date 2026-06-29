@@ -1,11 +1,26 @@
+// MITASK Z-TASK 
+function sumEvens(arr: number[]): number {
+  let sum = 0;
+  for (const num of arr) {
+    if (num % 2 === 0) {
+      sum += num;
+    }
+  }
+  return sum;
+}
+console.log(sumEvens([1, 2, 3]));
+console.log(sumEvens([1, 2, 3, 4, 6])); 
+
+
+
 // MITASK Y-TASK 
-function findIntersection<T>(arr1: T[], arr2: T[]): T[] {
+/* function findIntersection<T>(arr1: T[], arr2: T[]): T[] {
   return arr1.filter(item => arr2.includes(item));
 }
 console.log(findIntersection([1, 2, 3], [3, 2, 0]));
 console.log(findIntersection(["a", "b", "c"], ["a", "b"])); 
 // <T> - har xil qiymatlar (str, num...)
-
+*/
 
 
 // MITASK X-TASK 
