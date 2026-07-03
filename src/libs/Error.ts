@@ -1,5 +1,5 @@
 export enum HttpCode {
-  OK = 200, 
+  OK = 200,
   CREATED = 201,
   NOT_MODIFIED = 304,
   BAD_REQUEST = 400,
@@ -16,10 +16,11 @@ export enum Message {
   UPDATE_FAILED = "Update is failed",
 
   USED_NICK_PHONE = "You are inserting already used nick or phone",
+  TOKEN_CREATION_FAILED = "Token creation error!",
   NO_MEMBER_NICK = "No member with that number nick",
   BLOCKED_USER = "You have been blocked, contact the restaurant!",
   WRONG_PASSWORD = "Wrong passsword, please try again!",
-  NOT_AUTHENTICATED = "You are nor authenticated. Please login first!"
+  NOT_AUTHENTICATED = "You are nor authenticated. Please login first!",
 }
 
 class Errors extends Error {
