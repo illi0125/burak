@@ -21,15 +21,11 @@ const store = new MongoDBStore({
 /** 1-ENTRANCE **/
 const app = express();
 app.use(express.static(path.join(__dirname, "public")));
-app.use("/uploads", express.static("/uploads"));
+app.use("/uploads", express.static("./uploads"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 app.use(morgan(MORGAN_FORMAT));
-
-// REACT
-// Allow your upcoming Vite frontend to access this backend
-app.use(cors({ origin: "http://localhost:5173" }));
 
 /** 2-SESSIONS **/
 app.use(
