@@ -5,7 +5,11 @@ import uploader from "./libs/utils/uploader";
 import productController from "./controllers/product.controller";
 import orderController from "./controllers/order.controller";
 
-/** Member **/
+/*
+╔════════════════════════════════════════════════════════╗
+║                      M E M B E R                       ║
+╚════════════════════════════════════════════════════════╝
+*/
 router.get("/member/restaurant", memberController.getRestaurant);
 router.post("/member/login", memberController.login);
 router.post("/member/signup", memberController.signup);
@@ -22,16 +26,22 @@ router.post(
   memberController.updateMember,
 );
 router.get("/member/top-users", memberController.getTopUsers);
-
-/** Product **/
+/*
+╔════════════════════════════════════════════════════════╗
+║                     P R O D U C T                      ║
+╚════════════════════════════════════════════════════════╝
+*/
 router.get("/product/all", productController.getProducts);
 router.get(
   "/product/:id",
   memberController.retrieveAuth,
   productController.getProduct,
 );
-
-/** Order **/
+/*
+╔════════════════════════════════════════════════════════╗
+║                      O R D E R                         ║
+╚════════════════════════════════════════════════════════╝
+*/
 router.post(
   "/order/create",
   memberController.verifyAuth,
